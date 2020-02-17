@@ -8,6 +8,6 @@ First clone this repository
 
 then execute the command
 
-## node app.js
+node app.js
 
 The page should be running on localhost:3000
