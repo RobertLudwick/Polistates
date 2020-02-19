@@ -12,5 +12,5 @@ app.get('/', function(req, res) {
 });
 app.use('client',express.static(__dirname + '/client'));
 
-app.listen(3000);
+app.listen(process.env.PORT);
 
