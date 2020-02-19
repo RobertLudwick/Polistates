@@ -2,8 +2,9 @@
   "name": "polistates",
   "version": "1.0.0",
   "description": "Polistates is a strategy game being developed as part of our 2020 capstone project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,6 +15,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RobertLudwick/Polistates/issues"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "homepage": "https://github.com/RobertLudwick/Polistates#readme",
   "dependencies": {
