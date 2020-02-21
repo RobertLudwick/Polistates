@@ -5,11 +5,11 @@ var app = express();
 var serve = require('http').Server('app');
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/client/index.html');
+    res.sendFile(__dirname + '/client/navbar.html');
 });
 app.use('client',express.static(__dirname + '/client'));
 
 //Heroku
-//app.listen(process.env.PORT);
+app.listen(process.env.PORT);
 //Local
-app.listen(3000);
+//app.listen(3000);
