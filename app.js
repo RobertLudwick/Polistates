@@ -26,5 +26,3 @@ app.use('client',express.static(__dirname + '/client'));
 
 //Heroku
 app.listen(process.env.PORT || 3000);
-//local
-//app.listen(3000);
