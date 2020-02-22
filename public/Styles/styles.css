@@ -4,7 +4,6 @@ body {
   }
   
   header {
-    width: 100%;
     text-align: center;
   }
 
@@ -30,4 +29,10 @@ body {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
