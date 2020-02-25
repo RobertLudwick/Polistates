@@ -25,14 +25,29 @@ body {
   background-color: #ddd;
   color: black;
 }
-  
+ 
+/* Class selector ".selector" */
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
+/* Element selector "selector" */
 img {
   max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */
+}
+
+/* ID selector "#selector" */
+#loginS {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  /*
+  padding: TOPpx RIGHTpx BOTTOMpx LEFTpx;
+  padding: TOPpx RIGHT/LEFTpx BOTTOMpx;
+  padding: TOP/BOTTOMpx RIGHT/LEFTpx; <---
+   */
+  padding: 14px 16px;
 }
