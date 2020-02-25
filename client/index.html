@@ -7,20 +7,24 @@
 </head>
 <body>
 
-
-<div class="topnav">
-  <a href="#Polistates">Polistates</a>
-  <a class="active" href="/home">Home</a>
-  <a href="/news" >News</a>
-  <a href="/about" >About</a>
-  <a href="/test" >Become a Tester</a>
-  <div style="float:right" id="loginS">
-    <form action="loginList" method="GETloginList">
-      <input type="text" placeholder="Username" name="usrn">
-      <input type="text" placeholder="Password" name="pswd">
-      <button type="submit">Login</button>
-    </form>
-  </div>
+<div class="navbar">
+    <ul id="navbar">
+        <li><a href="#Polistates">Polistates</a></li>
+        <li class="active"><a href="/home">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/test">Want to test our game?</a></li>
+    </ul>
+    <div class="logindrpdwn">
+        <li>Login/Register</li>
+        <div class="logindrpdwn-window">
+        <label>Email: </label><br>
+        <input type="text" placeholder="Email"><br>
+        <label>Password: </label>label><br>
+        <input type="password" placeholder="Password"><br>
+        <input type="submit" value="Login" /></div>
+    </div>
 </div>
 
 <!-- put main webpage here -->

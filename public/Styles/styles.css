@@ -32,13 +32,6 @@ body {
   color: white;
 }
 
-/* Element selector "selector" */
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* ie8 */
-}
-
 /* ID selector "#selector" */
 #loginS {
   font-family: Arial, Helvetica, sans-serif;
@@ -50,4 +43,232 @@ img {
   padding: TOP/BOTTOMpx RIGHT/LEFTpx; <---
    */
   padding: 14px 16px;
+}
+*/
+/* Element selector "selector" */
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+
+
+/* --- New Navbar CSS --- */
+#navbar {
+  width: 95%;
+  margin: 8px 0px 0px 0px;
+  padding: 6px 6px 6px 6px;
+  height: 40px;
+  line-height: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: 0px 0px 0px #7D7D7D;
+  -webkit-box-shadow: 0px 0px 0px #7D7D7D;
+  -moz-box-shadow: 0px 0px 0px #7D7D7D;
+  background: #8B8B8B;
+  background: linear-gradient(top,  #3D61A9,  #29487D);
+  background: -ms-linear-gradient(top,  #3D61A9,  #29487D);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3D61A9), to(#29487D));
+  background: -moz-linear-gradient(top,  #3D61A9,  #29487D);
+  border: solid 0px #193B6D;
+  position:relative;
+  z-index:999;
+}
+#navbar li {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#navbar a {
+  font-weight: bold;
+  font-family: georgia;
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px 6px 20px;
+  margin: 0;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-shadow: 0px 0px 0px #000000;
+}
+#navbar li ul li a {
+  margin: 0;
+}
+#navbar .active a, #navbar li:hover > a {
+  background: #6E5E0E;
+  background: linear-gradient(top,  #29487D,  #3D61A9);
+  background: -ms-linear-gradient(top,  #29487D,  #3D61A9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#29487D), to(#3D61A9));
+  background: -moz-linear-gradient(top,  #29487D,  #3D61A9);
+  color: #98DAEB;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 0px 0px 0px #FFFFFF;
+}
+#navbar ul li:hover a, #navbar li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#navbar ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #29487D,  #3D61A9) !important;
+  background: -ms-linear-gradient(top,  #29487D,  #3D61A9) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#29487D), to(#3D61A9)) !important;
+  background: -moz-linear-gradient(top,  #29487D,  #3D61A9) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 0px 0px 0px #FFFFFF;
+}
+#navbar li:hover > ul {
+  display: block;
+}
+#navbar ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #3D61A9,  #29487D);
+  background: -ms-linear-gradient(top,  #3D61A9,  #29487D);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3D61A9), to(#29487D));
+  background: -moz-linear-gradient(top,  #3D61A9,  #29487D);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: solid 1px #B4B4B4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 0px #222222;
+  -moz-box-shadow: 0px 0px 0px #222222;
+  box-shadow: 0px 0px 0px #222222;
+}
+#navbar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#navbar ul a {
+  padding:10px 0px 10px 15px;
+  color:#FFFFFF !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:georgia;
+  font-weight: normal;
+  text-shadow: 0px 0px 0px #FFFFFF;
+}
+#navbar ul li:first-child > a {
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+}
+#navbar ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+}
+#navbar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#navbar {
+  display: inline-block;
+}
+  html[xmlns] #navbar {
+  display: block;
+}
+* html #navbar {
+  height: 1%;
+}
+
+/* --- logindrpdwn (LOGIN DROPDOWN) --- */
+/*
+https://jsfiddle.net/d5r6y5xw/1/
+When the 'Your dropdown text' div gets hovered, we change the display property of the dropdown
+content in order for it to be shown
+*/
+.logindrpdwn:hover .logindrpdwn-window {
+  display: block;
+}
+/*
+"An element with position: relative; is positioned relative to its normal position"
+*/
+.logindrpdwn {
+  position: relative;
+  display: inline-block;
+}
+/*
+"An element with position: absolute; is positioned relative to the nearest positioned ancestor"
+
+In this case, it's positionned relatived to the 'Your dropdown text' div. I then played with the
+left and top properties in order to allign it properly
+*/
+.logindrpdwn-window {
+  display: none;
+  position: absolute;
+  left:0px;
+  top:46px;
+  background: linear-gradient(top,  #3D61A9,  #29487D);
+  background: -ms-linear-gradient(top,  #3D61A9,  #29487D);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3D61A9), to(#29487D));
+  background: -moz-linear-gradient(top,  #3D61A9,  #29487D);
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+  border:1px solid black;
+}
+
+/*Under this comment, it's mostly for styles. You can ignore what's below*/
+/* a:hover {
+background-color: grey;
+}
+
+li {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+} */
+
+li a, .logindrpdwn{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .logindrpdwn:hover{
+  background: linear-gradient(top,  #29487D,  #3D61A9) !important;
+  background: -ms-linear-gradient(top,  #29487D,  #3D61A9) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#29487D), to(#3D61A9)) !important;
+  background: -moz-linear-gradient(top,  #29487D,  #3D61A9) !important;
+  color: #FFFFFF !important;
 }
