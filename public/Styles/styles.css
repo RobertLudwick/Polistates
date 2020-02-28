@@ -1,3 +1,4 @@
+/* -------- Site CSS -------- */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,16 +8,20 @@ body {
     text-align: center;
   }
 
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+  }
+
 /* --- New Navbar CSS --- */
 .navbar {
   width: 100%;
-  margin: 8px 0px 0px 0px;
-  height: 40px;
+  height:40px;
   line-height: 100%;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  background: #8B8B8B;
   background: linear-gradient(top,  #3D61A9,  #29487D);
   background: -ms-linear-gradient(top,  #3D61A9,  #29487D);
   background: -webkit-gradient(linear, left top, left bottom, from(#3D61A9), to(#29487D));
@@ -24,24 +29,26 @@ body {
   position:relative;
   z-index:999;
 }
+
 .navbar li {
   padding: 5px;
   float: left;
   position: relative;
   list-style: none;
 }
+
 #login {
   float: right;
 }
+
 .navbar a, .logindrpdwn:hover, .logindrpdwn {
   font-weight: bold;
   font-family: georgia;
   font-style: normal;
   font-size: 16px;
   color: #FFFFFF;
-  padding: 6px 20px 6px 20px;
+  padding: 6px 20px;
   margin: 0;
-  margin-bottom: 0px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
@@ -52,34 +59,14 @@ body {
   background: -ms-linear-gradient(top,  #29487D,  #3D61A9);
   background: -webkit-gradient(linear, left top, left bottom, from(#29487D), to(#3D61A9));
   background: -moz-linear-gradient(top,  #29487D,  #3D61A9);
-  color: #98DAEB;
 }
-.navbar ul li:hover a, .navbar li:hover li a {
-  background: none;
-  border: none;
-  color: #666;
-  -box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-}
-.navbar ul a:hover {
+
+.navbar ul a:hover , .navbar ul{
   background: #0399D4 !important;
   background: linear-gradient(top,  #29487D,  #3D61A9) !important;
   background: -ms-linear-gradient(top,  #29487D,  #3D61A9) !important;
   background: -webkit-gradient(linear, left top, left bottom, from(#29487D), to(#3D61A9)) !important;
-  background: -moz-linear-gradient(top,  #29487D,  #3D61A9) !important;
-  color: #FFFFFF !important;
-  
-}
-.navbar li:hover > ul {
-  display: block;
-}
-.navbar ul {
-  background: #DDDDDD;
-  background: linear-gradient(top,  #3D61A9,  #29487D);
-  background: -ms-linear-gradient(top,  #3D61A9,  #29487D);
-  background: -webkit-gradient(linear, left top, left bottom, from(#3D61A9), to(#29487D));
-  background: -moz-linear-gradient(top,  #3D61A9,  #29487D);
+  background: -moz-linear-gradient(top,  #29487D,  #3D61A9) !important; 
   display: none;
   margin: 0;
   padding: 0;
@@ -92,14 +79,19 @@ body {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
+
 .navbar ul li {
   float: none;
   margin: 0;
   padding: 0;
 }
+
+.navbar li:hover > ul {
+  display: block;
+}
+
 .navbar ul a {
   padding:10px 0px 10px 15px;
-  color:#FFFFFF !important;
   font-size:12px;
   font-style:normal;
   font-family:georgia;
@@ -107,8 +99,7 @@ body {
   text-shadow: 0px 0px 0px #FFFFFF;
 }
 
-
-/* --- logindrpdwn (LOGIN DROPDOWN) --- */
+/* ---/// logindrpdwn (LOGIN DROPDOWN) ///--- */
 /*
 https://jsfiddle.net/d5r6y5xw/1/
 When the 'Your dropdown text' div gets hovered, we change the display property of the dropdown
@@ -118,11 +109,7 @@ content in order for it to be shown
   margin: 5px;
 }
 
-
 .logindrpdwn:hover .logindrpdwn-window {
-  display: block;
-}
-.logindrpdwn:hover .logindrpdwn-window:hover {
   display: block;
 }
 
@@ -140,12 +127,13 @@ content in order for it to be shown
   z-index: 1;
   border:1px solid black;
 }
+
 li a, .logindrpdwn{
   display: inline-block;
-
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  top: 1px;
 }
 
 .logindrpdwn:hover{
@@ -153,13 +141,5 @@ li a, .logindrpdwn{
   background: -ms-linear-gradient(top,  #29487D,  #3D61A9) !important;
   background: -webkit-gradient(linear, left top, left bottom, from(#29487D), to(#3D61A9)) !important;
   background: -moz-linear-gradient(top,  #29487D,  #3D61A9) !important;
-  color: #FFFFFF !important;
   top: 5px;
-  color: #FFFFFF !important;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* ie8 */
 }
