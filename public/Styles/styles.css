@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(221, 221, 221);
-  background: linear-gradient(0deg, rgba(56,79,125,1) 0%, rgba(255,255,255) 100%);
+  background: linear-gradient(0deg,rgba(255,255,255) 0%, rgba(56,79,125,1) 100%);
 }
 header {
   text-align: center;
