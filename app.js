@@ -23,6 +23,10 @@ app.get('/test', function(req, res) {
 app.get('/navbar', function(req, res) {
     res.sendFile(__dirname + '/client/navbar.html');
 });
+app.get('/map', function(req, res) {
+    res.sendFile(__dirname + '/client/map.html');
+});
+
 app.use('client',express.static(__dirname + '/client'));
 
 app.use(express.static(path.join(__dirname, 'public')));
