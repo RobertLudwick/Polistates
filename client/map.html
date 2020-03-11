@@ -14,10 +14,47 @@
   <a href="#">Contact</a>
 </div>
 
-
 <span style="font-size:30px;cursor:pointer" id="myDIV" onclick="toggle()">&#9776; Menu</span>
+<br>
 
 
+
+
+
+<map ></map>
    
+<script type="text/javascript">
+var xmlns     ="http://www.w3.org/2000/svg";
+var svg       = document.createElementNS (xmlns, "svg");
+
+svg.setAttributeNS(null, 'width' ,  300);
+svg.setAttributeNS(null, 'height',  300);
+
+var hexsize = 150;
+var hexlocationx = 0;
+var hexlocationy = 0;
+var polygon = document.createElementNS(xmlns, "polygon");
+var array = arr = [ [ 300,150 ], [ 225,280 ],[ 75,280 ], [ 0,150 ], [ 75,20 ],[ 225,20 ], ];
+var hexstring = "";
+
+
+
+for (value of array) {
+  hexstring = hexstring.concat(value[0].toString() + "," + value[1].toString() + " " );
+}
+
+console.log(hexstring)
+
+polygon.setAttributeNS(null, "points", hexstring);
+polygon.setAttributeNS(null, "fill", "none");
+polygon.setAttributeNS(null, "stroke", "black");
+polygon.setAttributeNS(null, "stroke-width", "2");
+
+
+svg.appendChild(polygon);
+document.getElementsByTagName('map')[0].appendChild(svg);
+
+    
+</script>
 </body>
 </html> 
