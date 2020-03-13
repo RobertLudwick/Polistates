@@ -42,3 +42,14 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  map {
+    stroke: black;
+  }
+
+  polygon{
+    fill: white;
+  }
+  polygon:hover{
+    fill: red;
+  }
