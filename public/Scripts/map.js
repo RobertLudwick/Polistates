@@ -33,26 +33,35 @@ function openNav() {
     }
   }
 
-function hexagon(hexsize){
+function hexagon(hexsize, hexlocationx, hexlocationy){
     var array = arr = [ [ 300,150 ], [ 225,280 ],[ 75,280 ], [ 0,150 ], [ 75,20 ],[ 225,20 ], ];
     var hexstring = "";
     var x = 300
     var x0 = 0
     var y = 150
     var y0 = 150
+
+    //hexsize= hexlocationy*hexsize;
+
+    for (value of array) {
+      value[0] = value[0]+ (150 * hexlocationx)
+    }
+    for (value of array) {
+      value[1] = value[1]+ (150 * hexlocationy)
+    }
     console.log(Math.sqrt( ( x -= x0 ) * x + ( y -= y0 ) * y ));
-    array[0][0] = hexsize *2;
-    array[0][1] = hexsize;
-    array[1][0] = hexsize *1.5;
+    //array[0][0] = hexsize *2;
+    //array[0][1] = hexsize;
+    //array[1][0] = hexsize *1.5;
     //array[1][1] = (hexsize *2)/8;
-    array[2][0] = hexsize /2;
+    //array[2][0] = hexsize /2;
     //array[2][1] = hexsize *2;
-    array[3][0] = 0;
-    array[3][1] = hexsize;
-    array[4][0] = hexsize /2;
-    array[4][1] = 20;
-    array[5][0] = hexsize *1.5;
-    array[5][1] = 20;
+    //array[3][0] = 0;
+    //array[3][1] = hexsize;
+    //array[4][0] = hexsize /2;
+    //array[4][1] = 20;
+    //array[5][0] = hexsize *1.5;
+    //array[5][1] = 20;
 
     for (value of array) {
         hexstring = hexstring.concat(value[0].toString() + "," + value[1].toString() + " " );
