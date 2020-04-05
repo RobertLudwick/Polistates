@@ -2,12 +2,16 @@ body {
     font-family: "Lato", sans-serif;
   }
   
+  .myDIV {
+    position: fixed;
+  }
+
   .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
-    top: 0;
+    z-index: 1; 
+    top: 80px;
     left: 0;
     background-color: transparent;
     pointer-events: none;
@@ -31,8 +35,8 @@ body {
   }
   
   .sidenav .closebtn {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 100px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -52,4 +56,64 @@ body {
   }
   polygon:hover{
     fill: red;
+  }
+
+  /* Topbar */
+  .topbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .topbar p {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .main {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  /* BottomBar */
+
+  .bottombar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .bottombar p {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+
+  /* Button */
+  
+  .bottombar button {
+    float: right;
+    background-color: #333;
+    border: none;
+    color: #f2f2f2;
+    padding: 30px 32px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .bottombar button:hover {
+    background-color:#555;
   }

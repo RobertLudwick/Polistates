@@ -21,7 +21,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
     //document.getElementById("main").style.marginLeft= "0";
     //document.getElementById("myDIV").style.display="none";
-    open =false;
+    open = false;
   }
 
   function toggle() {
@@ -77,3 +77,5 @@ function hexagon(hexsize, hexlocationx, hexlocationy){
     svg.appendChild(polygon);
     document.getElementsByTagName('map')[0].appendChild(svg);
 }
+
+
