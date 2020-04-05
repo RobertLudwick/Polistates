@@ -4,9 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="Styles/map.css" rel="stylesheet" type="text/css">
 <script src="Scripts/map.js"></script>
+<script src="Scripts/turn.js"></script>
 </head>
 <body>
 
+<div class = "topbar">
+  <p>Population: <span id="population">100</span></p>
+  <p>Currency: $<span id="currency">10000</span></p>
+  <p>Resources: <span id="resources">500</span></p>
+  <p>Happiness: <span id="happiness">50</span></p>
+</div>
+
+<div class="main">
 <div id="mySidenav" class="sidenav">
   <a href="#">About</a>
   <a href="#">Services</a>
@@ -14,17 +23,23 @@
   <a href="#">Contact</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer" id="myDIV" onclick="toggle()">&#9776; Menu</span>
+
+<span style="font-size:30px;cursor:pointer" id="myDIV" class="myDIV" onclick="toggle()">&#9776; Menu</span>
 <br>
-
-
-
 
 
 <map >
     <script>hexagon(150, 5, 1);
     hexagon(150, 0, 1);</script>
 </map>
+</div>
+
+
+<div class="bottombar">
+  <button onclick="nextTurn()" id = "nextTurn">Next Turn</button>
+  <p>Current Turn: <span id="currentTurn">0</span></p>
+</div>
+
    
 </body>
 </html> 
