@@ -9,10 +9,10 @@
 <body>
 
 <div class = "topbar">
-  <p>Population: <span id="population">100</span></p>
-  <p>Currency: $<span id="currency">10000</span></p>
-  <p>Resources: <span id="resources">500</span></p>
-  <p>Happiness: <span id="happiness">50</span></p>
+  <p>Population: <span id="population">10000</span></p>
+  <p>Currency: $<span id="currency">0</span></p>
+  <p>Resources: <span id="resources">0</span></p>
+  <p>Happiness: <span id="happiness">1</span></p>
 </div>
 
 <div class="main">
@@ -36,8 +36,18 @@
 
 
 <div class="bottombar">
+  <!-- Next Turn Button -->
   <button onclick="nextTurn()" id = "nextTurn">Next Turn</button>
   <p>Current Turn: <span id="currentTurn">0</span></p>
+
+  <!-- Select Government Buttons-->
+  <button onclick="selectGovt2()" id = "nextTurn">Choose to play as Govt 2</button>
+  <button onclick="selectGovt1()" id = "nextTurn">Choose to play as Govt 1</button>
+
+  <!-- Scenario Button -->
+  <p>World Fair Contributions: <span id="worldfair">0</span></p>
+
+  <button onclick="scenario1()" id = "nextTurn">Scenario</button>
 </div>
 
    
