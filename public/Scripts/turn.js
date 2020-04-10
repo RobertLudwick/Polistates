@@ -28,10 +28,10 @@ function selectGovt2() {
     }
 }
 
-function nextTurn() {
+function incrementTurn(turn) {
     //Increase turn number
     var element = document.getElementById('currentTurn').innerHTML;
-    element++;
+    element = turn;
     document.getElementById('currentTurn').innerHTML = element;
 
     //Increase country values

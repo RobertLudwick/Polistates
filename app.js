@@ -23,6 +23,9 @@ app.get('/test', function(req, res) {
 app.get('/navbar', function(req, res) {
     res.sendFile(__dirname + '/client/navbar.html');
 });
+app.get('/new', function(req, res) {
+    res.sendFile(__dirname + '/client/newgame.html');
+});
 app.get('/map', function(req, res) {
     res.sendFile(__dirname + '/client/map.html');
 });
