@@ -1,5 +1,12 @@
 body {
+    background-color: rgb(86, 86, 136);
     font-family: "Lato", sans-serif;
+  }
+
+  .clear:after {
+    content: "";
+    display: block;
+    clear: both;
   }
   
   .myDIV {
@@ -47,18 +54,8 @@ body {
     .sidenav a {font-size: 18px;}
   }
 
-  map {
-    stroke: black;
-  }
-
-  polygon{
-    fill: white;
-  }
-  polygon:hover{
-    fill: red;
-  }
-
   /* Topbar */
+
   .topbar {
     overflow: hidden;
     background-color: #333;
@@ -79,6 +76,69 @@ body {
   .main {
     margin-top: 100px;
     margin-bottom: 30px;
+  }
+
+  /*Hexagonal Grid*/
+
+  #grid {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0; /* Clears unordered list default of 40px */
+  }
+
+  #grid li {
+    list-style-type: none;
+    position: relative;
+    z-index: -1;
+    float: left;
+    width: 27.85714285714286%;
+    padding: 0 0 32.16760145166612% 0;
+    -o-transform: rotate(-60deg) skewY(30deg);
+    -moz-transform: rotate(-60deg) skewY(30deg);
+    -webkit-transform: rotate(-60deg) skewY(30deg);
+    -ms-transform: rotate(-60deg) skewY(30deg);
+    transform: rotate(-60deg) skewY(30deg);
+    background: #f1f0f1;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  #grid li * {
+    visibility: visible;
+  }
+
+  #grid li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+  }
+
+  #grid li:nth-child(3n+2) {
+    margin: 0 1%;
+  }
+
+  #grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+    margin-top: -6.9285714285%;
+    margin-bottom: -6.9285714285%;
+    -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  }
+
+  #grid li:nth-child(6n+4) { 
+    margin-left: 0.5%;
   }
 
   /* BottomBar */
@@ -103,7 +163,7 @@ body {
   /* Button */
   
   .bottombar button {
-    float: right;
+    float: none;
     background-color: #333;
     border: none;
     color: #f2f2f2;
