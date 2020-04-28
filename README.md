@@ -4,12 +4,22 @@ Polistates is a strategy game being developed as part of our Drew University Com
 
 ## Continuing this project
 
-### Setup
+### Workspace Setup
 
-First clone this repository
+Clone this repository
 
 then execute the command
 
 node app.js
 
 The page should be running on localhost:3000
+
+This project is optomized for Heroku if you want to put it on the internet
+
+### What we accomplished
+
+### Suggestions for the next team
+
+#### New Features
+
+#### Changes to existing ones
