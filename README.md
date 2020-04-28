@@ -30,7 +30,7 @@ This project is optomized for Heroku if you want to put it on the internet
 ## Contributors
 
 ### Polistates team Spring 2020
-Bobby Ludwick
+Bobby Ludwick\n
 Griffin Bortnick
 Sean Larson
 Ian Davis
