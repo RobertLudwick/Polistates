@@ -1,7 +1,7 @@
 
 body {
-    <div style="background-image: url("Images/Capstone Map V2.jpg");">
-    font-family: "Lato", sans-serif;
+   background-color: rgb(86, 86, 136);
+   font-family: "Lato", sans-serif;
   }
 
   .clear:after {
@@ -21,6 +21,7 @@ body {
     z-index: 1; 
     top: 80px;
     left: 0;
+    background-color: transparent; 
     pointer-events: none;
     overflow-x: hidden;
     transition: 0.5s;
