@@ -23,7 +23,22 @@ This project is optomized for Heroku if you want to put it on the internet
 
 #### New Features
 
+Add additional scenarios (Below are some possible examples)
+	- Climate Change (Natural Disasters)
+	- Loss of resources (Natural Disasters, Pest infestations)
+	- Human rights violations
+	- Terrorism
+	- Overpopulation
+	- Border conflics
+	- Annexing neighboring cities and countries controlled by A.I. 
+Add a leaderboard and/or competitive stats for the players
+Add a mini globe in the corner that will allow players to easily move, or rotate the map
+
 #### Changes to existing ones
+
+Add new types of terrain to the map, and if necessary, change existing terrain.
+	- Alternatively, add a way to randomize terrain between all the islands
+
 
 ### General advice
 
