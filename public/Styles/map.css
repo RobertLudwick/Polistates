@@ -1,6 +1,7 @@
 
 body {
-    background: url(Images/Capstone Map V2.jpg);
+   background-color: rgb(86, 86, 136);
+   font-family: "Lato", sans-serif;
   }
 
   .clear:after {
