@@ -38,7 +38,7 @@ Add a mini globe in the corner that will allow players to easily move, or rotate
 
 Add new types of terrain to the map, and if necessary, change existing terrain.
 	- Alternatively, add a way to randomize terrain between all the islands
-
+Instead of a set number of turns, have the game choose a random number between a set minimum and a set maximum.
 
 ### General advice
 
