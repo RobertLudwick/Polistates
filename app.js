@@ -2,7 +2,7 @@ console.log(module);
 
 var express = require('express');
 var app = express();
-var serve = require('http').Server('app');
+//var serve = require('http').Server('app');
 var path = require('path')
 
 app.get('/', function(req, res) {
@@ -23,6 +23,13 @@ app.get('/test', function(req, res) {
 app.get('/navbar', function(req, res) {
     res.sendFile(__dirname + '/client/navbar.html');
 });
+app.get('/new', function(req, res) {
+    res.sendFile(__dirname + '/client/newgame.html');
+});
+app.get('/map', function(req, res) {
+    res.sendFile(__dirname + '/client/map.html');
+});
+
 app.use('client',express.static(__dirname + '/client'));
 
 app.use(express.static(path.join(__dirname, 'public')));
