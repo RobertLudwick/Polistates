@@ -1,6 +1,6 @@
+
 body {
-    background-color: rgb(86, 86, 136);
-    font-family: "Lato", sans-serif;
+   font-family: "Lato", sans-serif;
   }
 
   .clear:after {
@@ -20,7 +20,7 @@ body {
     z-index: 1; 
     top: 80px;
     left: 0;
-    background-color: transparent;
+    background-color: transparent; 
     pointer-events: none;
     overflow-x: hidden;
     transition: 0.5s;

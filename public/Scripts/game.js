@@ -1,4 +1,4 @@
-var turn = 1;
+var turn = 0;
 var maxturn = 8;
 
 
