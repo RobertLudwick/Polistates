@@ -14,21 +14,25 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 </style>
-
+<body>
 <div class = "topbar">
+  <p>Current Turn: <span id="currentTurn">0</span></p>
   <p>Population: <span id="population">10000</span></p>
   <p>Currency: $<span id="currency">0</span></p>
   <p>Resources: <span id="resources">0</span></p>
   <p>Happiness: <span id="happiness">1</span></p>
+  <p>World Fair Contributions: <span id="worldfair">0</span></p>
 </div>
 
 <div class="main">
 <div id="mySidenav" class="sidenav">
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <button onclick="nextTurn()" id = "nextTurn" class="button">Next Turn</button>
+  <button onclick="selectGovt1()" id = "Govt1" class="button">Play as Gov. 1</button>
+  <button onclick="selectGovt2()" id = "Govt2" class="button">Play as Gov. 2</button>
+  <button onclick="scenario1()" id = "nextTurn" class="button">World Fair</button>
+  <a href="/home">Home</a>
 </div>
+
 
 <span style="font-size:30px;cursor:pointer" id="myDIV" class="myDIV" onclick="toggle()">&#9776; Menu</span>
 <br>
@@ -71,22 +75,6 @@ background-size: cover;
       <div class="hexagon"></div>
     </li>
 </ul>
-
-<div class="bottombar">
-  <!-- Next Turn Button -->
-  <button onclick="nextTurn()" id = "nextTurn">Next Turn</button>
-  <p>Current Turn: <span id="currentTurn">0</span></p>
-  <!-- <script>getTurn();</script>-->
-
-  <!-- Select Government Buttons-->
-  <button onclick="selectGovt1()" id = "Govt1">Choose to play as Govt 1</button>
-  <button onclick="selectGovt2()" id = "Govt2">Choose to play as Govt 2</button>
-
-  <!-- Scenario Button -->
-  <p>World Fair Contributions: <span id="worldfair">0</span></p>
-
-  <button onclick="scenario1()" id = "nextTurn">Scenario</button>
-
 </div>
 
 </body>
