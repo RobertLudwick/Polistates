@@ -97,3 +97,56 @@ function scenario1(){
         alert("You didn't contribute to the world fair... shame!");
     }
 }
+
+function scenario2(){
+    //Introduce Virus
+    var virus = alert("A deadly virus now exists in the world");
+
+    //Amount of currency needed to find a cure
+    var vResearchNeed = 10000;
+
+    //Amount needed for virus to die out
+    var vPeopleCNeed = 5000;
+    var vPeopleRNeed = 7000;
+    
+    //Initial value of how many people die after the virus is first introduced
+    var liveslost = 100;
+
+    //Country Values
+    var population = document.getElementById('population').innerHTML;
+    var currency = document.getElementById('currency').innerHTML;
+    var resources = document.getElementById('resources').innerHTML;
+
+    if(vResearchNeed > 0 || vPeopleCNeed > 0 && vPeopleRNeed > 0){
+        population = parseInt(population) - liveslost;
+        document.getElementById('population').innerHTML = population;
+
+        var peopleCNeed = confirm("Your country's people are suffering. Would you like to give some resources to help them?");
+        var peopleRNeed = confirm("Your country's people are suffering. Would you like to give some currency to help them?");
+        var researchNeed = confirm("People are suffering from this virus. Would you like to give some currency to help find a cure?");
+
+        if (peopleCNeed){
+            var cDonate = parseInt(prompt("Enter your chosen amount currency you'd like to donate"));
+            currency = parseInt(currency) - cDonate;
+            document.getElementById('currency').innerHTML = currency;
+        } else{
+            liveslost += 10;
+        }
+        if (peopleRNeed){
+            var rDonate = parseInt(prompt("Enter your chosen amount resources you'd like to donate"));
+            resources = parseInt(resources) - rDonate;
+            document.getElementById('resources').innerHTML = resources;
+        } else{
+            liveslost = liveslost * 2;
+        }
+        if (researchNeed){
+            var rchDonate = parseInt(prompt("Enter your chosen amount currency you'd like to donate to finding a cure"));
+            currency = parseInt(currency) - rchDonate;
+            document.getElementById('currency').innerHTML = currency;
+        } else{
+            alert("The world continues to suffer...");
+        }
+    } else{
+        liveslost = 0;
+    }
+}
