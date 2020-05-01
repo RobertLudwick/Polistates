@@ -30,13 +30,13 @@ app.get('/map', function(req, res) {
     res.sendFile(__dirname + '/client/map.html');
 });
 
-var tools = require('./oauth')
-app.get('/request', function(req, res){
+// var tools = require('./oauth')
+// app.get('/request', function(req, res){
    
-    var request = tools.getUrl
-    console.log(request())
-    res.send(request); // try res.json() if getList() returns an object or array
-}); 
+//     var request = tools.getUrl
+//     console.log(request())
+//     res.send(request); // try res.json() if getList() returns an object or array
+// }); 
 
 app.use('client',express.static(__dirname + '/client'));
 
