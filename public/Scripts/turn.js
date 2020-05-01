@@ -121,7 +121,7 @@ function scenario2(){
         population = parseInt(population) - liveslost;
         document.getElementById('population').innerHTML = population;
 
-        var peopleCNeed = confirm("Your country's people are suffering. Would you like to give some resources to help them?");
+        var peopleCNeed = confirm("Your country's people are suffering. Would you like to give some currency to help them?");
         if (peopleCNeed){
             var cDonate = parseInt(prompt("Enter your chosen amount currency you'd like to donate"));
             currency = parseInt(currency) - cDonate;
@@ -130,7 +130,7 @@ function scenario2(){
             liveslost += 10;
         }
 
-        var peopleRNeed = confirm("Your country's people are suffering. Would you like to give some currency to help them?");
+        var peopleRNeed = confirm("Your country's people are suffering. Would you like to give some resources to help them?");
         if (peopleRNeed){
             var rDonate = parseInt(prompt("Enter your chosen amount resources you'd like to donate"));
             resources = parseInt(resources) - rDonate;
