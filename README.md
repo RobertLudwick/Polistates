@@ -25,12 +25,21 @@ This project is optomized for Heroku if you want to put it on the internet
 
 Add additional scenarios (Below are some possible examples)
 	- Climate Change (Natural Disasters)
+	
 	- Loss of resources (Natural Disasters, Pest infestations)
+	
 	- Human rights violations
+	
 	- Terrorism
+	
 	- Overpopulation
+	
 	- Border conflics
+	
 	- Annexing neighboring cities and countries controlled by A.I. 
+	
+	- International Space Station
+	
 Add a leaderboard and/or competitive stats for the players
 Add a mini globe in the corner that will allow players to easily move, or rotate the map
 
