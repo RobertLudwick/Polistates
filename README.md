@@ -54,7 +54,7 @@ Instead of a set number of turns, have the game choose a random number between a
 
 #### Major Changes
 
-Remake in React JS. While a majority of the code could be kept in this change, map.js would need to be completely rebuilt, and the file structure would completely change.
+Remake in React JS. While a majority of the code could be kept in this change, map.js would need to be rebuilt, and the file structure would change. This change would make the map easier to build though and the end result would likely look better.
 
 ### General advice
 
