@@ -24,6 +24,7 @@ This project is optomized for Heroku if you want to put it on the internet
 #### New Features
 
 Add additional scenarios (Below are some possible examples)
+	
 	- Climate Change (Natural Disasters)
 	
 	- Loss of resources (Natural Disasters, Pest infestations)
@@ -50,6 +51,10 @@ Set up transparent and interactice hexagonal grid.
 Add new types of terrain to the map, and if necessary, change existing terrain.
 	- Alternatively, add a way to randomize terrain between all the islands
 Instead of a set number of turns, have the game choose a random number between a set minimum and a set maximum.
+
+#### Major Changes
+
+Remake in React JS. While a majority of the code could be kept in this change, map.js would need to be completely rebuilt, and the file structure would completely change.
 
 ### General advice
 
