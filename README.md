@@ -58,6 +58,15 @@ Remake in React JS. While a majority of the code could be kept in this change, m
 
 ### General advice
 
+When making any new features or improvements to old ones, leave enough time to test and play around with whatever is being worked on. Trying to do anything last minute will only
+lead to stress and problems. Remember, this is an extremely complex project that involves a lot of moving parts; communicate with your team members and set up deadlines and
+assignments for one another. There are different ways you can approach working on this project, whether it be everyone working on the same feature and sharing ideas or resources, working in teams on different features, or working individually on different parts.
+
+Approaching the project with separate teams working on different features can work but make sure that everyone keeps up the communication and find a way to implement the different
+parts sooner rather than later.
+
+Best of luck working on this project!
+
 ## Contributors
 
 ### Polistates team Spring 2020
