@@ -23,7 +23,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "googleapis": "^49.0.0",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.5.0",
     "svg-spritemap-webpack-plugin": "github:cascornelissen/svg-spritemap-webpack-plugin#master"
   }
 }
